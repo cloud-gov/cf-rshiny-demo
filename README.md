@@ -48,7 +48,7 @@ CF_STAGING_TIMEOUT=30 cf push
 
 ## What each file does
 
-- The [`r.yml` file](r.yml) specifies a CRAN repository and the R packages that the sample application needs to operate.
-- The [`Procfile`](Procfile) [tells the R buildpack what command to run](https://docs.cloudfoundry.org/buildpacks/r/index.html#start_command) to start the application.
-- The [`app.R` file](app.R) has some simple R code to check the environment for the `EXAMPLE_NAME` that the application should run (if supplied), then starts that example as an app listening on the `PORT` supplied by Cloud Foundry.
-- The [`manifest.yml` file](manifest.yml) sets the name of the app and limits memory usage to 256M, and requests a random route to avoid collisions with other users running this sample in the same Cloud Foundry.
+- [`r.yml`](r.yml) specifies a CRAN repository and the R packages that the sample application needs to operate.
+- [`Procfile`](Procfile) [tells the R buildpack what command to run](https://docs.cloudfoundry.org/buildpacks/r/index.html#start_command) to start the application.
+- [`app.R`](app.R) contains some simple R code to check the environment for the `EXAMPLE_NAME` that the application should run (if supplied), then starts that example as an app listening on the `PORT` supplied by Cloud Foundry.
+- [`manifest.yml`](manifest.yml) sets the name of the app and limits memory usage to 256M, and requests a random route to avoid collisions with other users running this sample in the same Cloud Foundry.
