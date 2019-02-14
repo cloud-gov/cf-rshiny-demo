@@ -1,0 +1,6 @@
+---
+packages:
+  - cran_mirror: https://ftp.osuosl.org/pub/cran/
+    packages:
+      - name: dplyr
+      - name: ggvis
