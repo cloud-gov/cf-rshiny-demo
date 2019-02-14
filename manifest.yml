@@ -1,0 +1,5 @@
+---
+applications:
+- name: shiny-example
+  memory: 256M
+  random-route: true
