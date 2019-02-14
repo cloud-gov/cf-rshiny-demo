@@ -39,7 +39,7 @@ Set the variable `EXAMPLE_NAME` in the application's environment to the [directo
 ```
 cf set-env shiny-examples EXAMPLE_NAME <name-of-example> ; cf restart shiny-example
 ```
-If you've selected an example which requires particular R packages to be installed, it may not work! In that case, you can edit r.yml to list the missing packages, then `cf push` to redeploy. 
+If you've selected an example which requires particular R packages to be installed, it may not work! In that case, you can edit `r.yml` to list the missing packages, then `cf push` to redeploy. 
 
 If the example requires a lot of packages, you may find that the `cf` command is timing out before the application is fully deployed. You can set a longer timeout in minutes using the `CF_STAGING_TIMEOUT` environment variable before pushing the application:
 ```
