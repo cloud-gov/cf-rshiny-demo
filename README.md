@@ -52,3 +52,15 @@ CF_STAGING_TIMEOUT=30 cf push
 - [`Procfile`](Procfile) [tells the R buildpack what command to run](https://docs.cloudfoundry.org/buildpacks/r/index.html#start_command) to start the application.
 - [`app.R`](app.R) contains some simple R code to check the environment for the `EXAMPLE_NAME` that the application should run (if supplied), then starts that example as an app listening on the `PORT` supplied by Cloud Foundry.
 - [`manifest.yml`](manifest.yml) sets the name of the app and limits memory usage to 256M, and requests a random route to avoid collisions with other users running this sample in the same Cloud Foundry.
+
+## Contributing
+
+See [CONTRIBUTING](CONTRIBUTING.md) for additional information.
+
+## Public domain
+
+This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
+
+> This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+>
+> All contributions to this project will be released under the CC0 dedication. By submitting a pull request, you are agreeing to comply with this waiver of copyright interest.
