@@ -33,6 +33,8 @@ start command:   R -f app.R
 Visit the listed route in your web browser to see the application in action. It should look like this:
 ![Screenshot of a Chrome browser at a random URL showing the R Shiny movie explorer example](screenshot.png)
 
+That's it!
+
 ## To run a different demo
 
 Set the variable `EXAMPLE_NAME` in the application's environment to the [directory name](https://github.com/rstudio/shiny-examples) of the Shiny demo you'd like to run, then restart it:
